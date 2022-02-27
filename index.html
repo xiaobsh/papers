@@ -1,80 +1,55 @@
-<DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="zh-CN">
-<head>
-<title>中考试题</title>
-<!--
-<link rel="shortcut icon" href="./favicon.ico">
--->
-<link rel="icon" href="./favicon.png" sizes="32x32">
-<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
-<script type="text/javascript" src="index.js"></script>
-<style type="text/css">
-    .bt1 {
-    width: 130px;/*设置按钮宽度*/
-    height: 50px;/*设置按钮高度*/
-    color:white;/*字体颜色*/
-    background-color:cornflowerblue;/*按钮背景颜色*/
-    border-radius: 3px;/*让按钮变得圆滑一点*/
-    border-width: 0;/*消去按钮丑的边框*/
-    margin: 0;
-    outline: none;/*取消轮廓*/
-    font-size: 19px;/*设置字体大小*/
-    text-align: center;/*字体居中*/
-    cursor: pointer;/*设置鼠标箭头手势*/
-    }
-    .bt2 {
-    width: 70px;/*设置按钮宽度*/
-    height: 30px;/*设置按钮高度*/
-    color:white;/*字体颜色*/
-    background-color:#8551F2;/*按钮背景颜色*/
-    border-radius: 3px;/*让按钮变得圆滑一点*/
-    border-width: 0;/*消去按钮丑的边框*/
-    margin: 0;
-    outline: none;/*取消轮廓*/
-    font-size: 12px;/*设置字体大小*/
-    text-align: center;/*字体居中*/
-    cursor: pointer;/*设置鼠标箭头手势*/
-    }
-    button:hover {/*鼠标移动时的颜色变化*/
-    background-color: antiquewhite;
-    }
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="小白鼠">
+		<link rel="icon" href="./favicon.png" sizes="32x32">
+		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <title>白鼠站|中考分站</title>
+		<script type="text/javascript" src="lib/index.js"></script>
+		<style type="text/css">
     a{
-            text-decoration: none
+    	text-decoration: none;
     }
-</style>
-</head>
-<body style="background-color:#3366FF">
-
-<br />
-<h1 style="text-align:center">白鼠分站：中考试题</h1>
-<p style="text-align:center">
-网站正在计划改版
-</p>
-<br />
-<div style="text-align:center">
-<a target="_blank" href="https://xiaobsh.github.io/">
-<button class="bt1" type="button">主站</button>
-</a>
-&nbsp;&nbsp;&nbsp;&nbsp;
-<a target="_blank" href="mailto:xiaobaishu_wxh@126.com">
-<button class="bt1" type="button">邮件</button>
-</a>
-<br />
-<br />
-<br />
-</div>
-
-<div style="margin:0 auto;text-align:center;width:270px;border:1px solid #FFFFFF">
-<br />
-<label for="year">年份：</label><input type="text" style="text-align:center" id="year" />
-<br />
-<label for="area">地区：</label><input type="text" style="text-align:center" id="area" />
-<br />
-<br />
-<button class="bt2" id="jump" type="button" onclick="jumppage();">跳转</button>
-<br />
-<br />
-</div>
-
-</body>
+    div{
+    	border: none;
+    	width: 100%;
+    	padding: 0;
+    	margin: 0;
+    }
+    body{
+    	border: none;
+    	padding: 0;
+    	margin: 0;
+    }
+    .vcenter{
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    }
+    </style>
+	</head>
+	<body>
+		<div class="vcenter" style="height:30%;background-color:#FF5413;text-align:center">
+			<div>
+				<br />
+				<br />
+				<h1 style="">白鼠站|中考分站</h1>
+				<p>中考试题专站</p>
+				<br />
+				<br />
+			</div>			
+		</div>
+		<br />
+		<div id="subject" class="vcenter" style="height:30%;text-align:center">
+			<div onclick="jumpchoose('biology');">
+				<img src="./lib/biology.png" style="cursor:pointer;border:0" />
+				<br />生物<br />
+			</div>
+		</div>
+		<br />
+		<div id="frame" class="vcenter" style="height:20%;text-align:center">
+			
+		</div>
+	</body>
 </html>

@@ -1,0 +1,21 @@
+.bt2 {
+	width: 70px;
+  height: 30px;
+  color:white;
+  background-color:#8551F2;
+  border-radius: 3px;
+  border-width: 0;
+  margin: 0;
+  outline: none;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+}
+
+button:hover {
+  background-color: antiquewhite;
+}
